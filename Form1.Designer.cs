@@ -35,7 +35,9 @@
             this.tbBirthday = new System.Windows.Forms.TextBox();
             this.tbBitrhtime = new System.Windows.Forms.TextBox();
             this.btnShowResult = new System.Windows.Forms.Button();
+            this.tbResult = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -54,6 +56,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.tbResult);
             this.groupBox2.Location = new System.Drawing.Point(398, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(390, 426);
@@ -102,6 +105,15 @@
             this.btnShowResult.Text = "사주팔자 결과 보기";
             this.btnShowResult.UseVisualStyleBackColor = true;
             // 
+            // tbResult
+            // 
+            this.tbResult.Location = new System.Drawing.Point(6, 20);
+            this.tbResult.Multiline = true;
+            this.tbResult.Name = "tbResult";
+            this.tbResult.ReadOnly = true;
+            this.tbResult.Size = new System.Drawing.Size(378, 400);
+            this.tbResult.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -114,6 +126,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -127,6 +141,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnShowResult;
+        private System.Windows.Forms.TextBox tbResult;
     }
 }
 
