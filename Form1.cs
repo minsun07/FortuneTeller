@@ -105,5 +105,16 @@ namespace FortuneTeller
             }
 
         }
+
+        internal void LoadHistory(string history)
+        {
+            string birthday = history.Split('|')[0].Split(' ')[0];
+            tbBirthday.Text = birthday;
+            string birthtime = history.Split('|')[0].Split(' ')[1];
+            tbBitrhtime.Text = birthtime;
+            string saju = history.Split('|')[1];
+            string message = history.Split('|')[2];
+            tbResult.Text = birthday + " " + birthtime + Environment.NewLine + saju + Environment.NewLine + message;
+        }
     }
 }
