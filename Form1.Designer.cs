@@ -69,6 +69,7 @@
             this.btnShowResult.TabIndex = 4;
             this.btnShowResult.Text = "사주팔자 결과 보기";
             this.btnShowResult.UseVisualStyleBackColor = true;
+            this.btnShowResult.Click += new System.EventHandler(this.btnShowResult_Click);
             // 
             // tbBitrhtime
             // 
@@ -144,14 +145,14 @@
             // 상담내역불러오기ToolStripMenuItem
             // 
             this.상담내역불러오기ToolStripMenuItem.Name = "상담내역불러오기ToolStripMenuItem";
-            this.상담내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.상담내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.상담내역불러오기ToolStripMenuItem.Text = "상담내역 불러오기";
             this.상담내역불러오기ToolStripMenuItem.Click += new System.EventHandler(this.상담내역불러오기ToolStripMenuItem_Click);
             // 
             // 끝내기ToolStripMenuItem
             // 
             this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
-            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.끝내기ToolStripMenuItem.Text = "끝내기";
             this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.끝내기ToolStripMenuItem_Click);
             // 
