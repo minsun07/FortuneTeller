@@ -81,11 +81,30 @@ namespace FortuneTeller
         private void btnShowResult_Click(object sender, EventArgs e)
         {
             string birthday = tbBirthday.Text;
-            string bitrhtime = tbBitrhtime.Text;
+            string birthtime = tbBitrhtime.Text;
             string result = GetFortune();
             string saju = result.Split('|')[0];
             string message = result.Split('|')[1];
-            tbResult.Text = birthday + " " + bitrhtime + Environment.NewLine + saju + Environment.NewLine + message;
+            tbResult.Text = birthday + " " + birthtime + Environment.NewLine + saju + Environment.NewLine + message;
+            SaveHistory($"{birthday} {birthtime}|{result}");
+        }
+
+        private void SaveHistory(string history)
+        {
+            try
+            {
+                string filename = "history.csv";
+                File.AppendAllText( filename, history + Environment.NewLine);
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                MessageBox.Show($"권한이 없습니다.\n{ex.Message}", "권한 오류");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"알 수 없는 오류가 발생했습니다.\n{ex.Message}", "알 수 없는 오류");
+            }
+
         }
     }
 }
