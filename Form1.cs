@@ -43,7 +43,6 @@ namespace FortuneTeller
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 
             }
-            
         }
 
         private void 상담내역불러오기ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -55,7 +54,7 @@ namespace FortuneTeller
             }
             else
             {
-                form = new FormHistory();
+                form = new FormHistory(this);
                 form.Show();
             }
         }
