@@ -183,7 +183,6 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "포츈텔러 3105 안민선";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
